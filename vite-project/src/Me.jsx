@@ -7,7 +7,7 @@ const Me = () => {
     backgroundColor: "white",
     height: "30px",
     width: "30px",
-    };
+  };
   return (
     <>
       <section className="">
