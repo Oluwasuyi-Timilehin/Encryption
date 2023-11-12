@@ -1,4 +1,5 @@
-const Me = () => {
+import {AiOutlineArrowLeft} from 'react-icons/ai'
+const Homepage = () => {
   const design = {
     display: "none",
   };
@@ -11,7 +12,7 @@ const Me = () => {
   return (
     <>
       <section className="">
-        <nav className="flex justify-between w-full items-center px-3 py-2 border-b border-secondary bg-white shadow">
+        <nav className="flex justify-between w-full items-center px-3 py-2 border-b border-secondary bg-white shadow lg:hidden">
           <p className="font-bold">David</p>
           <img className="h-7 w-7 rounded-full" src="./src/Images/backg.JPG" />
         </nav>
@@ -52,8 +53,14 @@ const Me = () => {
               </button>
             </div>
           </nav>
-          <nav className="w-full px-4 py-6 space-y-6 md:px-0 md:py-0">
-            <div className="border px-2 py-3 h-full overflow-y-scroll md:h-[550px] md:px-10 md:py-8 ">
+          <nav className="w-full px-4 py-6 md:px-0 md:py-0">
+            <div className="bg-white hidden sticky top-0 lg:block">
+              <div className="flex items-center space-x-3 px-3 py-4">
+                <AiOutlineArrowLeft className='text-xl' />
+                <img src="./src/Images/backg.JPG" className='rounded-full h-10 w-10' />
+              </div>
+            </div>
+            <div className="border px-2 py-3 h-full md:h-full md:px-10 md:py-8">
               <nav className="">
                 <div className="pb-20 space-y-7">
                   <p className="bg-grey text-black px-2 py-1 rounded-lg float-left font-medium md:px-4">
@@ -123,7 +130,7 @@ const Me = () => {
             </div>
           </nav>
 
-          <nav className="fixed bottom-0 bg-white w-full md:w-6/12 md:bg-none md:right-10 space-y-3 px-4">
+          <nav className="fixed bottom-0 bg-white w-full md:w-6/12 md:bg-none md:right-5 space-y-3 px-4">
             <div className="">
               <div className="flex space-x-1 ">
                 <input
@@ -159,4 +166,4 @@ const Me = () => {
     </>
   );
 };
-export default Me;
+export default Homepage;

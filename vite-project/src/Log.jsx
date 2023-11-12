@@ -17,7 +17,7 @@ const Log=()=>{
                         <label className="text-lg text-left md:text-xl">Password</label>
                         <input type="password" placeholder="Password" className="border border-grey rounded-lg px-5 py-2 focus:outline-none focus:border-secondary" />
                     </div>
-                    <button className="font-bold bg-primary text-white py-2 rounded-lg"><Link to="/me">Log In</Link></button>
+                    <button className="font-bold bg-primary text-white py-2 rounded-lg"><Link to="/Homepage">Log In</Link></button>
                     <div className="flex justify-center items-center space-x-3">
                         <i className="border border-b-1 border-grey w-full"></i>
                         <p className="text-center">or</p>

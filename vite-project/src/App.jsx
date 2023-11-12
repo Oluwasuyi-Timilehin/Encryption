@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Dash from './Dash';
-import Me from './Me';
 import Log from './log';
+import Homepage from './Homepage';
+import SignUp from './SignUp';
 
  
 const App=()=>{
@@ -12,9 +12,9 @@ const App=()=>{
 
     <BrowserRouter>
       <Routes>
-        <Route path='/'  element={<Dash/>}></Route>
+        <Route path='/'  element={<SignUp/>}></Route>
         <Route path='/log' element={<Log></Log>}></Route>
-        <Route path='/Me' element={<Me/>}></Route>
+        <Route path='/Homepage' element={<Homepage/>}></Route>
       </Routes>
     </BrowserRouter>
     
